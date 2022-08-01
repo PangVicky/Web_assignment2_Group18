@@ -1,0 +1,51 @@
+
+#mainbody {
+    background-color: darkgray;
+}
+
+#title {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar a {
+    align-items: center;
+    
+    padding: 14pt;
+    color: skyblue;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.box {
+    flex: 1;
+    
+}
+
+#loginbody {
+    background-image: url('login.jpg');
+}
+
+#loginheader {
+    color: black;
+}
+
+#email, #login, #pass, #pass2 {
+    width: 1000pt;
+    height: 20pt;
+}
+
+#submit {
+    background-color: #008cba;
+}
+
+#reset {
+    background-color: rgb(232, 64, 64);
+}
+
+button {
+    padding: 8pt;
+    color: aliceblue;
+    border-radius: 5pt;
+    border: none;
+    margin: 5pt;
+}
