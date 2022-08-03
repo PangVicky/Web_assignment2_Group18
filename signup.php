@@ -8,7 +8,7 @@
     <link href="assignment2.css" rel="stylesheet" type="text/css">
     <script src="script.js" defer></script>
 </head>
-
+<body id="loginbody">
 <?php include 'header.php' ?>
 
 <?php
@@ -25,16 +25,17 @@
         $msg .= " (" . mysqli_connect_errno() . ")";
         exit($msg);
     }
-
+    error_reporting(0);
     $login = $_REQUEST['login'];
     $password = $_REQUEST['pass'];
     $email = $_REQUEST['email'];
-    $chkLogin = "SELECT LOGIN FROM USERS";
+    $chkLogin = "SELECT LOGIN FROM USERS WHERE LOGIN = '$login'";
     $result = mysqli_query($conn, $chkLogin);
     $resultLogin = mysqli_fetch_assoc($result);
 
     if ($login == $resultLogin['LOGIN'] ) {
         echo "Username already taken. Please enter a different username.";
+
     }
     else {
         $sql = "INSERT INTO USERS (LOGIN, PASSWORD, EMAIL) VALUES ('$login', '$password', '$email')";
@@ -45,10 +46,12 @@
             echo "error" . mysqli_error($conn);
         }
     }
-
+    
     if(isset($conn)) {
         mysqli_close($conn);
     }
+
+
 
 
 ?>

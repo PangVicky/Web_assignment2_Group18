@@ -8,7 +8,7 @@
     <link href="assignment2.css" rel="stylesheet" type="text/css">
     <script src="script.js" defer></script>
 </head>
-
+<body id="loginbody">
 <?php include 'header.php' ?>
 
 <div id="error"></div>

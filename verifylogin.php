@@ -8,7 +8,7 @@
     <link href="assignment2.css" rel="stylesheet" type="text/css">
     <script src="script.js" defer></script>
 </head>
-
+<body id="loginbody">
 <?php include 'header.php' ?>
 
 <?php
@@ -28,7 +28,7 @@
 
     $login = $_REQUEST['login'];
     $password = $_REQUEST['pass'];
-    $chkLogin = "SELECT LOGIN FROM USERS";
+    $chkLogin = "SELECT LOGIN FROM USERS WHERE LOGIN = '$login'";
     $chkPass = "SELECT PASSWORD FROM USERS WHERE LOGIN = $login";
     $result = mysqli_query($conn, $chkLogin);
     $resultP = mysqli_query($conn, $chkPass);
@@ -37,6 +37,9 @@
 
     if ($login == $resultLogin['LOGIN'] && $password == $resultPass['PASSWORD']) {
         session_start();
+        if ( !isset($_SESSION["login"])) {
+            $_SESSION["login"] = $login;
+        }
         echo "Login Successful.";
         
     }
