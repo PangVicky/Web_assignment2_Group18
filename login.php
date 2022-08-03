@@ -15,7 +15,7 @@
     <div class="formcontainer">
         <h1 id="loginheader">User Login</h1>
         <hr>
-        <form action="connect.php" method="post" id="form" onsubmit="return validate();">
+        <form action="signup.php" method="post" id="form" onsubmit="return validate();">
 
             <div class="textfield">
                 <label for="email">Email Address</label><br>

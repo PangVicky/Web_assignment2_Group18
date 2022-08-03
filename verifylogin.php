@@ -28,32 +28,24 @@
 
     $login = $_REQUEST['login'];
     $password = $_REQUEST['pass'];
-    $email = $_REQUEST['email'];
     $chkLogin = "SELECT LOGIN FROM USERS";
+    $chkPass = "SELECT PASSWORD FROM USERS WHERE LOGIN = $login";
     $result = mysqli_query($conn, $chkLogin);
+    $resultP = mysqli_query($conn, $chkPass);
     $resultLogin = mysqli_fetch_assoc($result);
+    $resultPass = mysqli_fetch_assoc($resultP);
 
-    if ($login == $resultLogin['LOGIN'] ) {
-        echo "Username already taken. Please enter a different username.";
-        if(isset($conn)) {
-            mysqli_close($conn);
-        }
+    if ($login == $resultLogin['LOGIN'] && $password == $resultPass['PASSWORD']) {
+        session_start();
+        echo "Login Successful.";
+        
     }
     else {
-        $sql = "INSERT INTO USERS (LOGIN, PASSWORD, EMAIL) VALUES ('$login', '$password', '$email')";
-        if (mysqli_query($conn, $sql)) {
-            echo "<p id=signup>Thanks for signing up!</p>";
-        }
-        else {
-            echo "error" . mysqli_error($conn);
-        }
-    
-        if(isset($conn)) {
-            mysqli_close($conn);
-        }
+        echo "Login or password invalid.";
     }
 
-
-
+    if(isset($conn)) {
+        mysqli_close($conn);
+    }
 ?>
-    <?php include 'footer.php' ?>
+<?php include 'footer.php' ?>
