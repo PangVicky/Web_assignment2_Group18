@@ -5,7 +5,7 @@
 
         <header class="header">
 
-            <h1 id="title"><a href="mainpage.php" id="titlelink">MovieStation</a></h1>
+            <h1 id="title"><a href="mainpage.html" id="titlelink">MovieStation</a></h1>
 
             <nav class="navbar">
                 <a href="login.php" id="login">Login</a>
