@@ -1,19 +1,15 @@
+
 const inputDivs= document.querySelectorAll(".textfield");
 
 console.log(inputDivs);
 // console.log(test);
-let checkboxDiv=document.querySelectorAll(".checkbox");
-console.log(checkboxDiv);
 let emailInput=document.querySelector("#email");
+console.log(emailInput);
 let loginInput=document.querySelector("#login");
 let passInput=document.querySelector("#pass");
 let pass2Input=document.querySelector("#pass2");
-let newsletterCheckbox=document.querySelector("#newsletter");
-let termsCheckbox=document.querySelector("#terms");
 
 //define a global variables
-let newsletterMsg="It is possible to receive the spam emails";
-let termsErrorMsg="terms and conditons must be checked";
 let defaultMSg="";
 let emailErrorMsg="Please enter a valid email";
 let loginErrorMsg="Please enter a valid login name";
@@ -140,28 +136,11 @@ function vaildatePass2(){
 function validatNewsletter(){
     let newsletterError = document.getElementById('newsletterError');
     let error = newsletterError.textContent;
-    // if(newsletterCheckbox.checked){
-    //     newsletterCheckbox.addEventListener("click", function(){// anonymous function
             if(this.checked){
                 alert("You will receive the spam email!");
                 error= defaultMSg;
             }
-            // });
-        // }
     return false;
-}
-
-//method to validate the terms 
-function validatTerms(){
-    let termsError = document.getElementById('termsError');
-    if(termsCheckbox.checked){
-        error = defaultMSg;
-    }
-    else{
-        // alert("You must accept the condition and terms!")
-        error = termsErrorMsg;
-    }
-    return error;
 }
 
 //event handler for submit event
@@ -171,8 +150,7 @@ function validate(){
     let loginValidation=vaildateLogin();
     let passValidation=vaildatePass();
     let pass2Validation=vaildatePass2();
-    let newsletterValidation=validatNewsletter();
-    let termsValidation=validatTerms();
+
     if(emailValidation !==defaultMSg){
         emailError.textContent = emailValidation;
         valid = false;
@@ -187,10 +165,6 @@ function validate(){
     }
     if(pass2Validation !==defaultMSg){
         pass2Error.textContent = pass2Validation;
-        valid = false;
-    }
-    if(termsValidation!==defaultMSg){
-        termsError.textContent=termsValidation;
         valid = false;
     }
     return valid;
@@ -228,22 +202,6 @@ pass2Input.addEventListener("blur",()=>{ // arrow function
         pass2Error.textContent = defaultMSg;
     }
     });
-
-// add event listner to the email if you entered correct email,the error paragraph with be empty
-newsletterCheckbox.addEventListener("change",function(){ // arrow function
-    let x=validatNewsletter();
-    if(this.checked){
-        alert("You will receive the spam email!");
-        newsletterError.textContent = defaultMSg;
-    }
-    }); 
-    
-// add event listner to the checkbox if you check the terms box,the error paragraph with be empty
-termsCheckbox.addEventListener("change", function(){// anonymous function
-    if(this.checked){
-        termsError.textContent= defaultMSg;
-    }
-    });  
      
 //event listner to empty the text inside the two paragraph when resent
 function reserFormError() {
@@ -254,6 +212,5 @@ function reserFormError() {
     newsletterError.textContent=defaultMSg;
     termsError.textContent=defaultMSg;
 }
- document.myForm.addEventListener("reset",reserFormError);
- document.myForm.addEventListener("submit", validate);
-
+ document.loginForm.addEventListener("reset",reserFormError);
+ document.loginForm.addEventListener("submit", validate);

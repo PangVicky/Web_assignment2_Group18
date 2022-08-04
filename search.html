@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Group18_Section303_Assignment2">
+    <title>Home Page_WEBSITE NAME REQUIRED(NOT NETFLIX)</title>
+    <link href="assignment2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="search.js" defer></script>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    form.mysearch input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
+    
+    form.mysearch button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
+    
+    form.mysearch button:hover {
+      background: #0b7dda;
+    }
+    
+    form.mysearch::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+    </head>
+
+<body id="searchbody">
+        
+
+
+    <h1 id="title">MovieStation</h1>
+
+        <form class="mysearch" style="margin:auto;max-width:300px">
+          <input id="searchbar" type="text" placeholder="Please input.." name="search2">
+          <button type="button" onclick="searchfunc()"><i class="fa fa-search"></i></button>
+        </form>
+
+        <table>
+
+            <thead>
+              <tr>
+                <th>Movies...</th>
+
+
+
+              </tr>
+            </thead>
+            <tbody>
+
+
+
+             
+            </tbody>
+           
+          </table>
+          <hr>
+
+
+</body>
+</html>
