@@ -3,10 +3,18 @@
     background-color: darkgray;
 }
 
+#profilebody {
+    background-color: darkgray;
+}
+
 #title {
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+#titlelink {
+    color:black;
+    text-decoration: none;
+}
 .navbar a {
     align-items: center;
     
@@ -44,6 +52,10 @@
 
 #loginbutton {
     background-color: #008cba;;
+}
+
+#searchbutton {
+    background-color: #008cba;
 }
 
 button {
