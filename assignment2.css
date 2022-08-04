@@ -29,8 +29,8 @@
     color: black;
 }
 
-#email, #login, #pass, #pass2 {
-    width: 1000pt;
+#email, #login, #pass, #pass2, #username, #password2 {
+    width: 500pt;
     height: 20pt;
 }
 
@@ -40,6 +40,10 @@
 
 #reset {
     background-color: rgb(232, 64, 64);
+}
+
+#loginbutton {
+    background-color: #008cba;;
 }
 
 button {
