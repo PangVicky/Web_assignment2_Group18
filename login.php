@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,7 @@
 <body id="loginbody">
     <div id="error"></div>
     <div class="formcontainer">
+        <h1 id="loginheader">User Sign-Up</h1>
         <hr>
         <form action="signup.php" method="post" id="form" onsubmit="return validate();">
             <table>
@@ -24,11 +26,7 @@
                             <span class="warning" id="emailError"></span>
                         </div>
                     </td>
-                    <td><label for="username">User Name</label><br>
-                        <input type="text" name="username" id="username" placeholder="User name">
-                    </td>
                 </tr>
-
                 <tr>
                     <td>
                         <div class="textfield">
@@ -37,11 +35,7 @@
                             <span class="warning" id="loginError"></span>
                         </div>
                     </td>
-                    <td><label for="password2">Password</label><br>
-                        <input type="text" name="password2" id="password2" placeholder="Password">
-                    </td>
                 </tr>
-
                 <tr>
                     <td>
                         <div class="textfield">
@@ -50,9 +44,7 @@
                             <span class="warning" id="passError"></span>
                         </div>
                     </td>
-                    <td><button id="loginbutton">Log In</button></td>
                 </tr>
-
                 <tr>
                     <td>
                         <div class="textfield">
@@ -65,6 +57,30 @@
             </table>
             <button type="submit" id="submit">Sign-Up</button>
             <button type="reset" id="reset">Reset</button>
+        </form>
+        <h1 id="loginheader">User Login</h1>
+        <hr>
+        <form action="verifylogin.php" method="post" id="loginform">
+        <table>
+            <tr>
+                <td>
+                    <div class="textfield">
+                        <label for="username">User Name</label><br>
+                        <input type="text" name="username" id="username" placeholder="User name">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="textfield">
+                        <label for="password2">Password</label><br>
+                        <input type="password" name="password2" id="password2" placeholder="Password">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" id="loginbutton">Log In</button>
+        <button type="reset" id="loginreset">Reset</button>
         </form>
     </div>
 

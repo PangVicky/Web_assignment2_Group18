@@ -7,9 +7,9 @@
 
             <nav class="navbar">
                 <a href="login.php" id="login">Login</a>
-                <a href="mainpage.html.#intro" id="aboutus">About us</a>
-                <a href="" id="searching">Searching</a>
+                <a href="mainpage.php.#intro" id="aboutus">About us</a>
+                <a href="browse.php" id="searching">Browse</a>
             </nav>
 
-        </header> '
+        </header> ';
 ?>
