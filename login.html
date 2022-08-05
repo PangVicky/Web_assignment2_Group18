@@ -14,43 +14,40 @@
     <div class="formcontainer">
         <h1 id="loginheader">MovieStation</h1>
         <hr>
-        <form name = "loginForm" action="registration.html" method="get" id="form" onsubmit="return validate();">
-                <tr>
-                    <td>
-                        <div class="textfield">
-                            <label for="login">User Name</label><br>
-                            <input type="text" name="login" id="login" placeholder="User name">
-                            <span class="warning" id="loginError"></span>
-                        </div>
-                    </td>
-                    <td><label for="password2">Password</label><br>
-                        <input type="text" name="password2" id="password2" placeholder="Password">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <div class="textfield">
-                            <label for="pass">Password</label><br>
-                            <input type="password" name="pass" id="pass" placeholder="Password">
-                            <span class="warning" id="passError"></span>
-                        </div>
-                    </td>
-                    <td><button id="loginbutton">Log In</button></td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <div class="textfield">
-                            <label for="pass2">Re-type Password</label><br>
-                            <input type="password" id="pass2" placeholder="Password">
-                            <span class="warning" id="pass2Error"></span>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <form name="loginForm" action="registration.html" method="get" id="form" onsubmit="return validate();">
+            <div class="textfield">
+                <label for="email">Email Address</label><br>
+                <input type="text" name="email" id="email" placeholder="Email Address">
+                <span class="warning" id="emailError"></span>
+            </div>
+            <div class="textfield">
+                <label for="login">Username</label><br>
+                <input type="text" name="login" id="login" placeholder="Username">
+                <span class="warning" id="loginError"></span>
+            </div>
+            <div class="textfield">
+                <label for="pass">Password</label><br>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+                <span class="warning" id="passError"></span>
+            </div>
+            <div class="textfield">
+                <label for="pass2">Re-type Password</label><br>
+                <input type="password" id="pass2" placeholder="Password">
+                <span class="warning" id="pass2Error"></span>
+            </div>
             <button type="submit" id="submit">Sign-Up</button>
-            <button type="reset" id="reset">Reset</button>
+            <button type="reset" id="reset">Reset</button><br>
+            <div class="textfield">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <span class="warning" id="usernameError"></span>
+            </div>
+            <div>
+            <label for="password2">Password</label><br>
+                <input type="text" name="password2" id="password2" placeholder="Password">
+                <span class="warning" id="password2Error"></span>
+            </div>
+            <button id="loginbutton">Log In</button>
         </form>
     </div>
 
