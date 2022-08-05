@@ -1,9 +1,9 @@
-
 const data = [
     {
       "img": "DesperateHousewives.jpg",
-      "name": "Desperate Housewives",
+      "names": "Desperate Housewives",
       "year": 2015,
+      "genre": "Comedy",
       "director": "Dan Jukes",
       "desc": [
         "Radiation resistance",
@@ -14,93 +14,126 @@ const data = [
     },
     {
       "img": "Friends.jpg",
-      "name": "Friends",
+      "names": "Friends",
       "year": 2007,
+      "genre": "Fanmily",
       "director": "Jane Wilson",
       "desc": [
         "Million tonne punch",
         "Damage resistance",
         "Superhuman reflexes"
-      ]
+      ],
+      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
     },
     {
       "img": "Grey's_Anatomy.jpg",
-      "name": "Grey's Anatomy",
+      "names": "Grey's Anatomy",
       "year": 2010,
+      "genre": "Show",
       "director": "Jane Wilson",
       "desc": [
         "Million tonne punch",
         "Damage resistance",
         "Superhuman reflexes"
-      ]
+       
+       ],
+      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
     },
     {
       "img": "HouseCards.jpg",
-      "name": "House of Cards",
+      "names": "House of Cards",
       "year": 2019,
+      "genre": "Show",
       "director": "Jane Wilson",
       "desc": [
         "Million tonne punch",
         "Damage resistance",
         "Superhuman reflexes"
-      ]
+      ],
+      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
     },
     {
       "img": "young_sheldon.jpg",
-      "name": "Young Sheldon",
+      "names": "Young Sheldon",
       "year": 2020,
+      "genre": "Comedy",
       "director": "Jane Wilson",
       "desc": [
         "Million tonne punch",
         "Damage resistance",
         "Superhuman reflexes"
-      ]
+      ],
+      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
     }
   ]
 
-//console.log(data[0]);
- 
- function searchfunc() {
-  //get the user's input for search
-   var input = document.getElementById('searchbar').value;
-   input = input.toLowerCase();
-  //match the json data contain the  searched keyword
-   for (i = 0; i < data.length; i++) {
-     var obj = data[i];
-     //console.log(obj);
-    //if exist, create the table data:column and row
-     if (obj.name.toLowerCase().includes(input)) {
-      var tbody = document.querySelector("tbody");
-       var tr= document.createElement('tr');
-      //the 1st column show the picture of the video
-       var tdpic = document.createElement('img');
-       tdpic.setAttribute("id", obj.name);
-       tdpic.setAttribute("src", "images/"+obj.img);
-       tdpic.setAttribute("onclick", "clickImage");
-       tdpic.onclick = function() {
-        window.location = obj.link;
-       }
-       tr.appendChild(tdpic);
-       //the 2nd column show the name of the movies
-       var tdname = document.createElement('td');
-       tdname.innerHTML = `${obj.name}`;
-       tr.appendChild(tdname);
-      //show the year of the movies
-      var tdyear = document.createElement('td');
-      tdyear.innerHTML = `${obj.year}`;
-      tr.appendChild(tdyear);
-       //the 3rd column show the Genre
-       var tdDesc = document.createElement('td');
-       tdDesc.innerHTML = `${obj.desc}`;
-       tr.appendChild(tdDesc);
+function showlist(res){
+  for (var i=0;i<res.length;i++){
+    var obj = res[i];
+    var tbody = document.querySelector("tbody");
+    var tr= document.createElement('tr');
+  //the 1st column show the picture of the video
+    var tdpic = document.createElement('img');
+    tdpic.setAttribute("id", obj.names);
+    tdpic.setAttribute("src", "images/"+obj.img);
+    tdpic.setAttribute("onclick", "clickImage");
+    tdpic.onclick = function() {
+    window.location.assign(obj.link);
+    }
+    tr.appendChild(tdpic);
+    //the 2nd column show the name of the movies
+    var tdname = document.createElement('td');
+    tdname.innerHTML = `${obj.name}`;
+    tr.appendChild(tdname);
+  //show the year of the movies
+    var tdyear = document.createElement('td');
+    tdyear.innerHTML = `${obj.year}`;
+    tr.appendChild(tdyear);
+    //the 3rd column show the Genre
+    var tdDesc = document.createElement('td');
+    tdDesc.innerHTML = `${obj.desc}`;
+    tr.appendChild(tdDesc);
 
-       //finish one row and add it to tbody
-       tbody.appendChild(tr);
-   }
- }
+    //finish one row and add it to tbody
+    tbody.appendChild(tr);
+  }
 }
 
-function onloadEvent() {
-   var _td = document.getElementById()
+function searchfunc() {
+  var input = document.getElementById('searchbar').value;
+  if (input != "") {
+    var tbody = document.querySelector("tbody");
+    tbody.innerHTML = '';
+    input = input.toLowerCase();
+    var arr = [];
+    for (var i = 0; i < data.length; i++) {
+      var obj = data[i];
+     //if exist, create the table data:column and row
+      if (obj.names.toLowerCase().includes(input)) {
+        arr.push(obj);
+      }
+    }
+    showlist(arr);
+  }
+}
 
+function getOption(selectObject){
+  //set the value of item
+  var value = document.getElementById('filter').value.toLowerCase();
+  var keyvalue = document.getElementById('searchbar').value.toLowerCase();
+  // create the search result first, then filter items  
+  var flagsSearch = false;
+  var flagFilter = false;
+  var arr = [];
+  var tbody = document.querySelector("tbody");
+  tbody.innerHTML = '';
+  for (var i=0;i<data.length;i++){
+    var obj = data[i];
+    flagsSearch = obj.names.toLowerCase().includes(keyvalue);
+    flagFilter = obj.genre.toLowerCase().includes(value);
+    if(flagsSearch && flagFilter){
+      arr.push(obj);
+    }
+  }
+  showlist(arr);
 }
