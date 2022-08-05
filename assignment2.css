@@ -42,7 +42,7 @@
     height: 20pt;
 }
 
-#submit {
+#submit{
     background-color: #008cba;
 }
 
@@ -52,6 +52,10 @@
 
 #loginbutton {
     background-color: #008cba;;
+}
+
+#loginreset {
+    background-color: rgb(232, 64, 64);
 }
 
 #searchbutton {

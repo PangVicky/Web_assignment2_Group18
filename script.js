@@ -132,16 +132,6 @@ function vaildatePass2(){
     return error;     
 }
 
-//method to validate the newsletter 
-function validatNewsletter(){
-    let newsletterError = document.getElementById('newsletterError');
-    let error = newsletterError.textContent;
-            if(this.checked){
-                alert("You will receive the spam email!");
-                error= defaultMSg;
-            }
-    return false;
-}
 
 //event handler for submit event
 function validate(){

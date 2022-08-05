@@ -11,5 +11,5 @@
                 <a href="" id="searching">Searching</a>
             </nav>
 
-        </header> '
+        </header> ';
 ?>

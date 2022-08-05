@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +13,7 @@
 <?php include 'header.php' ?>
 
 <?php
-
+    error_reporting(0);
     $servername = "localhost:3307";
     $dbuser = "root";
     $dbpwd = "";
@@ -26,22 +27,18 @@
         exit($msg);
     }
 
-    $login = $_REQUEST['login'];
-    $password = $_REQUEST['pass'];
+    $login = $_REQUEST['username'];
+    $password = $_REQUEST['password2'];
     $chkLogin = "SELECT LOGIN FROM USERS WHERE LOGIN = '$login'";
-    $chkPass = "SELECT PASSWORD FROM USERS WHERE LOGIN = $login";
+    $chkPass = "SELECT PASSWORD FROM USERS WHERE LOGIN = '$login'";
     $result = mysqli_query($conn, $chkLogin);
     $resultP = mysqli_query($conn, $chkPass);
     $resultLogin = mysqli_fetch_assoc($result);
     $resultPass = mysqli_fetch_assoc($resultP);
 
     if ($login == $resultLogin['LOGIN'] && $password == $resultPass['PASSWORD']) {
-        session_start();
-        if ( !isset($_SESSION["login"])) {
-            $_SESSION["login"] = $login;
-        }
+        $_SESSION["login"] = $login;
         echo "Login Successful.";
-        
     }
     else {
         echo "Login or password invalid.";
