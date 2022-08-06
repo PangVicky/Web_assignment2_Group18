@@ -204,3 +204,4 @@ function reserFormError() {
 }
  document.loginForm.addEventListener("reset",reserFormError);
  document.loginForm.addEventListener("submit", validate);
+
