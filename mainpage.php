@@ -15,62 +15,46 @@
 
 <?php include 'header.php' ?>
 
-<section class="movies">
-
-        <h2 class="popularmovies">Popular movies </h2>
-
-        <div class="box-container">
-
+<div id="main">
+        <div id="content">
             <div class="box">
-                <img src="pic.jpg" alt="">
-                <h3>Name required</h3>
-            </div>
-
-            <div class="box">
-                <img src="pic.jpg" alt="">
-                <h3>Name required</h3>
-            </div>
-
-            <div class="box">
-                <img src="pic.jpg" alt="">
-                <h3>Name required</h3>
-            </div>
-
-            <div class="box">
-                <img src="pic.jpg" alt="">
-                <h3>Name required</h3>
-            </div>
-
-            <div class="box">
-                <img src="pic.jpg" alt="">
-                <h3>Name required</h3>
-            </div>
-
-            <div class="box">
-                <img src="pic.jpg" alt="">
-                <h3>Name required</h3>
-            </div>
-
+                <div class="head">
+                    <h2 id="heading2">Popular TV Shows</h2>
+                </div>
+                <div class="movie">
+                    <div class="movie-image"> <span class="play"><span class="name">Desperate Housewives</span></span> <a href="#"><img
+                                src="images/DesperateHousewives.jpg" alt="" /></a></div>
+                </div>
+                <div class="movie">
+                    <div class="movie-image"> <span class="play"><span class="name">Friends</span></span> <a
+                            href="#"><img src="images/Friends.jpg" alt="" /></a> </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-image"> <span class="play"><span class="name">Grey's Anatomy</span></span> <a
+                            href="#"><img src="images/Grey's_Anatomy.jpg" alt="" /></a> </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-image"> <span class="play"><span class="name">HouseCards</span></span> <a
+                            href="#"><img src="images/HouseCards.jpg" alt="" /></a> </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-image"> <span class="play"><span class="name">Virgin River</span></span> <a
+                            href="#"><img src="images/virgin_river.jpg" alt="" /></a> </div>
+                </div>
+                <div class="movie last">
+                    <div class="movie-image"> <span class="play"><span class="name">Young Sheldon</span></span> <a
+                            href="#"><img src="images/young_sheldon.jpg" alt="" /></a> </div>
+                </div>
+                <div class="cl">&nbsp;</div>
+            </div>   
         </div>
+    </div>
+    <div class="aboutsection">
+        <h3 id="heading3">About Us</h3>
+        <p id="intro">ALgonquin College: CST8285 group 18<br>
+            Group member: Jingfei Wang; Chunxia Pang; Yujin Xiong; Michael Riesberry.
+        </p>
+    </div>
 
-    </section>
-
-    <!-- services section ends -->
-
-    <!-- about us section starts  -->
-
-    <section class="about">
-
-        <div class="aboutsection">
-            <h3>about us</h3>
-            <p id="intro">ALgonquin College: CST8285 group 18<br>
-                Group member: Jingfei Wang; Chunxia Pang; Yujin Xiong; Michael Riesberry.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- about us section ends -->
 
     <?php include 'footer.php' ?>

@@ -10,6 +10,9 @@ body {
 	/* line-height:1.3; */
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	background:url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #heading3 {
@@ -101,17 +104,11 @@ div.formcontainer {
     display: block;
     text-align: center;
 }
-#form {
+#form, #loginform {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     text-align:left;
-}
-
-#loginbody {
-    background-image: url('images/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #loginheader {
