@@ -8,6 +8,7 @@
     <title>Home Page_WEBSITE NAME REQUIRED(NOT NETFLIX)</title>
     <link href="assignment2.css" rel="stylesheet" type="text/css">
     <script src="script.js" defer></script>
+    <script src="search.js" defer></script>
 
 </head>
 

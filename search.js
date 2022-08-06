@@ -154,7 +154,8 @@ function to() {
 
     //if match the name or director or desc of movies, link to search page
     if(searchInput == data[i].names || searchInput == data[i].director || searchInput == data[i].desc) {
-      window.location.href="http://localhost:8081/assignment2_Group18/Web_assignment2_Group18/search.html?search="+searchInput;
+      // window.location.href="http://localhost:8081/assignment2_Group18/Web_assignment2_Group18/search.html?search="+searchInput;
+      window.location.href="http://localhost/Web_assignment2_Group18/browse.php?search="+searchInput;
     }
   }
 }

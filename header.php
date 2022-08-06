@@ -11,11 +11,10 @@
                 <li><a href="browse.php" id="searching">Browse</a></li>
                 <li><a href="login.php" id="login">Subscribe/Login</a></li>
             </ul>
-            <!-- <div class="search-container">
-                  <input id="searchbar" type="text" placeholder="Search.." name="search">
-                  <button onclick="searchfunc()">Search</button>
-            </div> -->
-            <!-- sample: https://www.w3schools.com/howto/howto_css_searchbar.asp -->
+            <form action="browse.php">
+                    <input type="text" placeholder="Search.." name="search" id="searchKey">
+                    <button type="submit" onclick="to()"><i class="fa fa-search"></i></button>
+                  </form>
         </nav>
 
         </header> ';
