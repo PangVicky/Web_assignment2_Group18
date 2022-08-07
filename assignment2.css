@@ -13,6 +13,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    
+
+    /* min-height: 400px;
+    margin-bottom: 100px;
+    clear: both; */
 }
 
 #heading3 {
@@ -32,25 +40,23 @@ body {
     
  }
 
- #heading2 {
+ #heading2, #heading3 {
     padding-top: 5px;
  }
 
  #navigation {
 	display:block;
-	/* clear:right; */
 	border-top:1px dashed #666;
 	border-bottom:1px dashed #666;
-	padding: 20pt;
-    padding-top: 1pt;
+    /* padding-top: 1pt; */
 }
 /* #navigation ul {
 	list-style:none;
 } */
 #navigation ul li {
-	float:left;
 	display:inline;
 	padding-right:100px;
+    display: inline-block;
 }
 #navigation ul li a {
 	font-size:16px;
@@ -86,18 +92,30 @@ body {
 	position:relative;
 	z-index:2;
 }
-.aboutsection {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+
+.movie span.name {
+	font-weight:bold;
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+	
+	display:block;
 }
 
+footer {
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+}
+
+
 #footer{
-    /* width:100%;
-    bottom: 0;
-    position: absolute; */
-    float: right;
+    /* position: flex; */
+    /* float: right; */
+    margin-left: auto;
+    margin-top: auto;
 }
 
 div.formcontainer {
@@ -137,6 +155,10 @@ div.formcontainer {
 }
 
 #searchbutton {
+    background-color: #008cba;
+}
+
+#searchfor {
     background-color: #008cba;
 }
 
@@ -181,4 +203,8 @@ form.mysearch input[type=text] {
 
   #movieheadert {
     text-align: left;
+  }
+
+  #content {
+    display: grid;
   }
