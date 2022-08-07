@@ -1,4 +1,8 @@
-
+@media screen and (max-width: 768px) {
+    .main { width:100%; }
+    footer { width:100%; margin:0; border:none; }
+    img { max-width:100%; }
+}
 /* 
 #profilebody {
     background-color: darkgray;
@@ -207,4 +211,45 @@ form.mysearch input[type=text] {
 
   #content {
     display: grid;
+  }
+
+  /*search.html*/
+  * {
+    box-sizing: border-box;
+  }
+
+  form.mysearch input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  form.mysearch button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  form.mysearch button:hover {
+    background: #0b7dda;
+  }
+
+  form.mysearch::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #filter {
+    margin: 10pt;
+      
   }

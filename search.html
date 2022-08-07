@@ -9,44 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="js/jquery/jquery-1.12.1.min.js"></script>
   <script src="search.js" defer></script>
-  
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    form.mysearch input[type=text] {
-      padding: 10px;
-      font-size: 17px;
-      border: 1px solid grey;
-      float: left;
-      width: 80%;
-      background: #f1f1f1;
-    }
-
-    form.mysearch button {
-      float: left;
-      width: 20%;
-      padding: 10px;
-      background: #2196F3;
-      color: white;
-      font-size: 17px;
-      border: 1px solid grey;
-      border-left: none;
-      cursor: pointer;
-    }
-
-    form.mysearch button:hover {
-      background: #0b7dda;
-    }
-
-    form.mysearch::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  </style>
 </head>
 
 <body id="searchbody">
@@ -58,7 +20,6 @@
             <li><a href="mainpage2.html#intro" id="aboutus">About Us</a></li>
             <!-- <li><a href="search.html" id="searching">Search</a></li> -->
             <li><a href="login.html" id="login">Subscribe/Login</a></li>
-            <li><a href="search.html" id="searching">Search</a></li>
         </ul>
     </div>
 </header>
@@ -70,7 +31,7 @@
   <form class="mysearch" style="margin:auto;max-width:300px">
     <input id="searchbar" type="text" placeholder="Please input.." name="search2" required>
     <button type="button" onclick="searchfunc()"><i class="fa fa-search"></i></button>
-  </form>
+  
   <!-- create the filter area -->
   <select name="options" id="filter" onchange="getOption(this)">
     <option>More Filter</option>
@@ -79,7 +40,7 @@
     <option value="Show">Show</option>
     <option value="Show">Show</option>
   </select>
-
+  </form>
   <table>
     <thead>
       <tr>
