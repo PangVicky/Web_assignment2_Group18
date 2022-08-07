@@ -36,7 +36,7 @@ body {
     
  }
 
- #heading2, #heading3 {
+ #heading2, #heading3, #heading4, #heading5 {
     padding-top: 5px;
  }
 
@@ -206,6 +206,7 @@ form.mysearch input[type=text] {
   }
 
   form.mysearch input[type=text] {
+    margin: 20px;
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
