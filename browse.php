@@ -9,7 +9,7 @@
   <title>Home Page_WEBSITE NAME REQUIRED(NOT NETFLIX)</title>
   <link href="assignment2.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="js/jquery/jquery-1.12.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery/jquery-1.12.1.min.js"></script> -->
   <script src="search.js" defer></script>
 </head>
 
@@ -28,18 +28,16 @@
     </div>
 </header>
 
-  <!-- <h1 id="title">MovieStation</h1> -->
-  <!-- create the elemment: search style="margin:auto;max-width:300px -->
-  <form class="mysearch" >
-    <input id="searchbar" type="text" placeholder="Search..." name="search2" required>
-    <button type="button" onclick="searchfunc()" id="searchbtn"><i class="fa fa-search"></i></button>
+
+<form class="mysearch" style="margin:auto;max-width:300px">
+    <input id="searchbar" type="text" placeholder="Please input.." name="search2">
+    <button type="button" onclick="searchfunc()"><i class="fa fa-search"></i></button>
   
   <!-- create the filter area -->
   <select name="options" id="filter" onchange="getOption(this)">
     <option>More Filter</option>
     <option value="Comedy">Comedy</option>
     <option value="Family">Family</option>
-    <option value="Show">Show</option>
     <option value="Show">Show</option>
   </select>
   </form>

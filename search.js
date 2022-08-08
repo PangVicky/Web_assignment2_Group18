@@ -1,84 +1,84 @@
 const data = [
-    {
-      "img": "DesperateHousewives.jpg",
-      "names": "Desperate Housewives",
-      "year": 2015,
-      "genre": "Comedy",
-      "director": "Dan Jukes",
-      "desc": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ],
-      "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
-    },
-    {
-      "img": "Friends.jpg",
-      "names": "Friends",
-      "year": 2007,
-      "genre": "Family",
-      "director": "Jane Wilson",
-      "desc": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ],
-      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
-    },
-    {
-      "img": "Grey's_Anatomy.jpg",
-      "names": "Grey's Anatomy",
-      "year": 2010,
-      "genre": "Show",
-      "director": "Jane Wilson",
-      "desc": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-       
-       ],
-      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
-    },
-    {
-      "img": "HouseCards.jpg",
-      "names": "House of Cards",
-      "year": 2019,
-      "genre": "Show",
-      "director": "Jane Wilson",
-      "desc": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ],
-      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
-    },
-    {
-      "img": "young_sheldon.jpg",
-      "names": "Young Sheldon",
-      "year": 2020,
-      "genre": "Comedy",
-      "director": "Jane Wilson",
-      "desc": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ],
-      "link":  "https://www.youtube.com/watch?v=bd7UQA9laJE"
-    }
-  ]
+  {
+    "img": "DesperateHousewives.jpg",
+    "names": "Desperate Housewives",
+    "year": 2015,
+    "genre": "Comedy",
+    "director": "Dan Jukes",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+  },
+  {
+    "img": "Friends.jpg",
+    "names": "Friends",
+    "year": 2007,
+    "genre": "Family",
+    "director": "Jane Wilson",
+    "desc": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
+    ],
+    "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+  },
+  {
+    "img": "Grey's_Anatomy.jpg",
+    "names": "Grey's Anatomy",
+    "year": 2010,
+    "genre": "Show",
+    "director": "Jane Wilson",
+    "desc": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
 
-function showlist(res){
+    ],
+    "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+  },
+  {
+    "img": "HouseCards.jpg",
+    "names": "House of Cards",
+    "year": 2019,
+    "genre": "Show",
+    "director": "Jane Wilson",
+    "desc": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
+    ],
+    "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+  },
+  {
+    "img": "young_sheldon.jpg",
+    "names": "Young Sheldon",
+    "year": 2020,
+    "genre": "Comedy",
+    "director": "Jane Wilson",
+    "desc": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
+    ],
+    "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+  }
+]
+
+function showlist(res) {
   var tbody = document.querySelector("tbody");
-  for (var i=0;i<res.length;i++){
+  for (var i = 0; i < res.length; i++) {
     var obj = res[i];
-    var tr= document.createElement('tr');
-  //the 1st column show the picture of the video
+    var tr = document.createElement('tr');
+    //the 1st column show the picture of the video
     var tdpic = document.createElement('img');
-    tdpic.setAttribute("Movie Name", obj.names);
-    tdpic.setAttribute("src", "images/"+obj.img);
+    tdpic.setAttribute("name", obj.names);
+    tdpic.setAttribute("src", "images/" + obj.img);
     tdpic.setAttribute("onclick", "clickImage");
-    tdpic.onclick = function() {
-    window.location.assign(obj.link);
+    tdpic.onclick = function () {
+      window.location.assign(obj.link);
     }
     tr.appendChild(tdpic);
     //the 2nd column show the name of the movies
@@ -86,7 +86,7 @@ function showlist(res){
     console.log(tdname);
     tdname.innerHTML = `${obj.name}`;
     tr.appendChild(tdname);
-  //show the year of the movies
+    //show the year of the movies
     var tdyear = document.createElement('td');
     tdyear.innerHTML = `${obj.year}`;
     tr.appendChild(tdyear);
@@ -109,7 +109,7 @@ function searchfunc() {
     var arr = [];
     for (var i = 0; i < data.length; i++) {
       var obj = data[i];
-     //if exist, create the table data:column and row
+      //if exist, create the table data:column and row
       if (obj.names.toLowerCase().includes(input) || ((obj.desc).indexOf(input) > -1)) {
         arr.push(obj);
       }
@@ -118,7 +118,7 @@ function searchfunc() {
   }
 }
 
-function getOption(selectObject){
+function getOption(selectObject) {
   //set the value of item
   var value = document.getElementById('filter').value.toLowerCase();
   var keyvalue = document.getElementById('searchbar').value.toLowerCase();
@@ -128,11 +128,11 @@ function getOption(selectObject){
   var arr = [];
   var tbody = document.querySelector("tbody");
   tbody.innerHTML = '';
-  for (var i=0;i<data.length;i++){
+  for (var i = 0; i < data.length; i++) {
     var obj = data[i];
     flagsSearch = obj.names.toLowerCase().includes(keyvalue);
     flagFilter = obj.genre.toLowerCase().includes(value);
-    if(flagsSearch && flagFilter){
+    if (flagsSearch && flagFilter) {
       arr.push(obj);
     }
   }
@@ -142,17 +142,19 @@ function getOption(selectObject){
 //parse the request and get the search value
 function oneValues() {
   var oneValue;
-  var url=window.location.search;
-  if(url.indexOf("?")!=-1){
-    oneValue = url.substring(url.indexOf("=")+1);
+  var url = window.location.search;
+  // console.log(url);
+  if (url.indexOf("?") != -1) {
+    oneValue = url.substring(url.indexOf("=") + 1);
   }
   return oneValue;
 }
 
 
-function getRequest(){
-  var oneValue = oneValues();
-  document.getElementById("searchbar").value = oneValue;
+function getRequest() {
+  var searchword = oneValues();
+  console.log(searchword);
+  document.getElementById("searchbar").value = searchword;
   searchfunc();
 }
 
