@@ -1,4 +1,13 @@
-<?php
+<?php 
+/* 
+    Team Lead: Yujin Xiong
+    Back End Developer: Michael Riesberry
+    Front End Designer: Jingfei Wang
+    Front End Developer(JS): Chunxia Pang
+    Front End Developer(s)(HTML): Jingfei Wang, Yujin Xiong
+*/
+
+// Footer template, echos footer onto pages where footer.php is included
     echo '
     <footer>
         

@@ -1,4 +1,12 @@
-<?php session_start() ?>
+<?php session_start() 
+/* 
+    Team Lead: Yujin Xiong
+    Back End Developer: Michael Riesberry
+    Front End Designer: Jingfei Wang
+    Front End Developer(JS): Chunxia Pang
+    Front End Developer(s)(HTML): Jingfei Wang, Yujin Xiong
+*/
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,5 +60,4 @@
   </table>
   <hr>
 
-  <?php include 'footer.php' ?>
-
+  <?php include 'footer.php' // Adds footer.php to page, prints footer ?>

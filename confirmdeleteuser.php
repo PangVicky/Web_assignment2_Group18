@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php session_start(); 
+/* 
+    Team Lead: Yujin Xiong
+    Back End Developer: Michael Riesberry
+    Front End Designer: Jingfei Wang
+    Front End Developer(JS): Chunxia Pang
+    Front End Developer(s)(HTML): Jingfei Wang, Yujin Xiong
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +18,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-<?php include 'header.php' ?>
+<?php include 'header.php' // Adds header.php to page, prints header and nav bar ?>
 
 <main>
     <div>
@@ -21,4 +29,4 @@
 
 </main>
 
-<?php include 'footer.php' ?>
+<?php include 'footer.php' // Adds footer.php to page, prints footer ?>

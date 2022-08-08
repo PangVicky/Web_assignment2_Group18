@@ -1,4 +1,14 @@
 <?php
+/* 
+    Team Lead: Yujin Xiong
+    Back End Developer: Michael Riesberry
+    Front End Designer: Jingfei Wang
+    Front End Developer(JS): Chunxia Pang
+    Front End Developer(s)(HTML): Jingfei Wang, Yujin Xiong
+*/
+
+// Header template, echos header and nav bar onto pages where header.php is included
+
   echo '<!-- header section starts  -->
         <header class="header">
         <h1 id="title"><a href="mainpage.php" id="titlelink">MovieStation</a></h1>
