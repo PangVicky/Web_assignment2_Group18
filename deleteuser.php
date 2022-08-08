@@ -25,7 +25,7 @@
         $msg .= " (" . mysqli_connect_errno() . ")";
         exit($msg);
     }
-// error_reporting(0);
+error_reporting(0);
 $login = $_SESSION['login'];
 $chkLogin = "SELECT LOGIN FROM USERS WHERE LOGIN = '$login'";
 $result = mysqli_query($conn, $chkLogin);
