@@ -119,7 +119,7 @@ div.formcontainer {
     color: #ccc;
 }
 
-#email, #login, #pass, #pass2, #username, #password2 {
+#email, #login, #pass, #pass2, #username, #password2, #editemail, #editpassword {
     width: 500pt;
     height: 20pt;
 }
