@@ -31,13 +31,22 @@
     $password = $_REQUEST['password2'];
     $chkLogin = "SELECT LOGIN FROM USERS WHERE LOGIN = '$login'";
     $chkPass = "SELECT PASSWORD FROM USERS WHERE LOGIN = '$login'";
+    $getEmail = "SELECT EMAIL FROM USERS WHERE LOGIN = '$login'";
+    $getUserId = "SELECT ID FROM USERS WHERE LOGIN = '$login'";
     $result = mysqli_query($conn, $chkLogin);
     $resultP = mysqli_query($conn, $chkPass);
+    $resultE = mysqli_query($conn, $getEmail);
+    $resultU = mysqli_query($conn, $getUserId);
     $resultLogin = mysqli_fetch_assoc($result);
     $resultPass = mysqli_fetch_assoc($resultP);
+    $resultEmail = mysqli_fetch_assoc($resultE);
+    $resultUserId = mysqli_fetch_assoc($resultU);
 
     if ($login == $resultLogin['LOGIN'] && $password == $resultPass['PASSWORD']) {
         $_SESSION["login"] = $login;
+        $_SESSION["password"] = $password;
+        $_SESSION["email"] = $resultEmail['EMAIL'];
+        $_SESSION["userId"] = $resultUserId['ID'];
         echo "Login Successful.";
     }
     else {
