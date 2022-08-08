@@ -1,0 +1,41 @@
+<?php session_start();
+error_reporting(0);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Group18_Section303_Assignment2">
+    <title>Home Page_MovieStation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery/jquery-1.12.1.min.js"></script>
+    <link href="assignment2.css" rel="stylesheet" type="text/css">
+    <script src="search.js" defer></script>
+</head>
+
+<body>
+<?php include 'header.php' ?>
+
+<table id="usertable">
+        <tr>
+            <th class="table_e">ID</th>
+            <th class="table_e">Username</th>
+            <th class="table_e">Password</th>
+            <th class="table_e">Email</th>
+            <th class="table_e"></th>
+        </tr>
+        <tr>
+            <td class="table_e"><?php echo $_SESSION['userId'] ?></td>
+            <td class="table_e"><?php echo $_SESSION['login'] ?></td>
+            <td class="table_e"><?php echo $_SESSION['password'] ?></td>
+            <td class="table_e"><?php echo $_SESSION['email'] ?></td>
+            <td class="table_e"><a href="editinfo.php">Edit</a>
+                    <a href="deleteuser.php">Delete Account</a>
+            </td>
+        </tr>
+    </table>
+
+    
+
+    <?php include 'footer.php' ?>
