@@ -255,5 +255,10 @@
             </div>
         </div>
     </div>
-
+    <div>
+            <h3 id="heading3">About Us</h3>
+            <p id="intro">ALgonquin College: CST8285 group 18<br>
+                Group member: Jingfei Wang; Chunxia Pang; Yujin Xiong; Michael Riesberry.
+            </p>
+        </div>
     <?php include 'footer.php' ?>

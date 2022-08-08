@@ -52,3 +52,5 @@
   </table>
   <hr>
 
+  <?php include 'footer.php' ?>
+
