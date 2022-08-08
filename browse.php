@@ -13,6 +13,7 @@
   <script src="search.js" defer></script>
 </head>
 
+
 <body id="searchbody">
   <header class="header">
     <h1 id="title"><a href="mainpage.php" id="titlelink">MovieStation</a></h1>
@@ -21,16 +22,17 @@
             <li><a class="active" href="mainpage.php" id="mainpage">Home</a></li>
             <li><a href="mainpage.php#intro" id="aboutus">About Us</a></li>
             <!-- <li><a href="search.html" id="searching">Search</a></li> -->
-            <li><a href="login.php" id="login">Subscribe/Login</a></li>
+            <li><a href="login.html" id="login">Subscribe/Login</a></li>
+            <li><a href="edituser.php" id="edit">Edit Users</a></li>
         </ul>
     </div>
 </header>
 
-
-
-<form class="mysearch" style="margin:auto;max-width:300px">
-    <input id="searchbar" type="text" placeholder="Please input.." name="search2">
-    <button type="button" onclick="searchfunc()"><i class="fa fa-search"></i></button>
+  <!-- <h1 id="title">MovieStation</h1> -->
+  <!-- create the elemment: search style="margin:auto;max-width:300px -->
+  <form class="mysearch" >
+    <input id="searchbar" type="text" placeholder="Search..." name="search2" required>
+    <button type="button" onclick="searchfunc()" id="searchbtn"><i class="fa fa-search"></i></button>
   
   <!-- create the filter area -->
   <select name="options" id="filter" onchange="getOption(this)">
