@@ -143,7 +143,7 @@ function getOption(selectObject) {
 function oneValues() {
   var oneValue;
   var url = window.location.search;
-  console.log(url);
+  // console.log(url);
   if (url.indexOf("?") != -1) {
     oneValue = url.substring(url.indexOf("=") + 1);
   }
@@ -153,8 +153,9 @@ function oneValues() {
 
 function getRequest() {
   var searchword = oneValues();
+  console.log(searchword);
   document.getElementById("searchbar").value = searchword;
-  getOption();
+  searchfunc();
 }
 
 getRequest();

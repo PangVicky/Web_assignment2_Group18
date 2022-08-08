@@ -29,10 +29,9 @@
 </header>
 
 
-
 <form class="mysearch" style="margin:auto;max-width:300px">
     <input id="searchbar" type="text" placeholder="Please input.." name="search2">
-    <button type="button" onclick="getOption(this)"><i class="fa fa-search"></i></button>
+    <button type="button" onclick="searchfunc()"><i class="fa fa-search"></i></button>
   
   <!-- create the filter area -->
   <select name="options" id="filter" onchange="getOption(this)">

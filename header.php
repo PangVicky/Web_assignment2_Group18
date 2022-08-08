@@ -1,6 +1,5 @@
 <?php
   echo '<!-- header section starts  -->
-
         <header class="header">
         <h1 id="title"><a href="mainpage.php" id="titlelink">MovieStation</a></h1>
 
@@ -22,3 +21,4 @@
 
         </header> ';
 ?>
+
