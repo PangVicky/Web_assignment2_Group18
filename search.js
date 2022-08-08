@@ -150,9 +150,16 @@ function oneValues() {
   return oneValue;
 }
 
+function to() {
+  for( var i=0; i < data.length;i++) {
+    const searchInput = document.getElementById("searchKey").value;
 
-function getRequest() {
-  var searchword = oneValues();
+    //if match the name or director or desc of movies, link to search page
+    if(searchInput == data[i].names || searchInput == data[i].director || searchInput == data[i].desc) {
+      window.location.href="http://localhost/Web_assignment2_Group18/browse.php?search="+searchInput;
+    }
+  }
+}
 
   document.getElementById("searchbar").value = searchword;
   searchfunc();

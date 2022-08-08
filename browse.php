@@ -13,6 +13,7 @@
   <script src="search.js" defer></script>
 </head>
 
+
 <body id="searchbody">
   <header class="header">
     <h1 id="title"><a href="mainpage.php" id="titlelink">MovieStation</a></h1>
@@ -22,9 +23,12 @@
             <li><a href="mainpage.php#intro" id="aboutus">About Us</a></li>
             <!-- <li><a href="search.html" id="searching">Search</a></li> -->
             <li><a href="login.php" id="login">Subscribe/Login</a></li>
+            <li><a href="edituser.php" id="edit">Edit Users</a></li>
         </ul>
     </div>
 </header>
+
+
 
 <form class="mysearch" style="margin:auto;max-width:300px">
     <input id="searchbar" type="text" placeholder="Please input.." name="search2">
@@ -48,4 +52,6 @@
     </tbody>
   </table>
   <hr>
+
+  <?php include 'footer.php' ?>
 
