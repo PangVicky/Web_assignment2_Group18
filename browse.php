@@ -26,8 +26,6 @@
     </div>
 </header>
 
-
-
 <form class="mysearch" style="margin:auto;max-width:300px">
     <input id="searchbar" type="text" placeholder="Please input.." name="search2">
     <button type="button" onclick="searchfunc()"><i class="fa fa-search"></i></button>
@@ -37,7 +35,6 @@
     <option>More Filter</option>
     <option value="Comedy">Comedy</option>
     <option value="Family">Family</option>
-    <option value="Show">Show</option>
     <option value="Show">Show</option>
   </select>
   </form>
