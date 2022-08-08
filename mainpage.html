@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery/jquery-1.12.1.min.js"></script>
     <link href="assignment2.css" rel="stylesheet" type="text/css">
-    <script src="search.js" defer></script>
+    <script src="script.js" defer></script>
     <!-- <script src="search.js" defer></script> -->
 </head>
 
@@ -22,13 +22,13 @@
                 <li><a href="login.html" id="login">Subscribe/Login</a></li>
                 <li>
                     <form action="search.html">
-                        <input type="text" placeholder="Search.." name="search" id="searchKey">
-                        <button type="submit" onclick="to()" id="searchfor"><i class="fa fa-search"></i></button>
+                        <input type="text" placeholder="Search.." name="search" id="searchKey" required>
+                        <button type="submit" id="searchfor" onclick="validateSearch"><i class="fa fa-search"></i></button>
                     </form>
                 </li>
             </ul>
 
-            <!-- sample: https://www.w3schools.com/howto/howto_css_searchbar.asp -->
+            <!-- sample: https://www.w3schools.com/howto/howto_css_searchbar.asp  onclick="to()" -->
         </nav>
     </header>
     <div id="main">
