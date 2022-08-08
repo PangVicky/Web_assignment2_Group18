@@ -68,13 +68,13 @@ const data = [
   ]
 
 function showlist(res){
+  var tbody = document.querySelector("tbody");
   for (var i=0;i<res.length;i++){
     var obj = res[i];
-    var tbody = document.querySelector("tbody");
     var tr= document.createElement('tr');
   //the 1st column show the picture of the video
     var tdpic = document.createElement('img');
-    tdpic.setAttribute("id", obj.names);
+    tdpic.setAttribute("Movie Name", obj.names);
     tdpic.setAttribute("src", "images/"+obj.img);
     tdpic.setAttribute("onclick", "clickImage");
     tdpic.onclick = function() {
@@ -83,6 +83,7 @@ function showlist(res){
     tr.appendChild(tdpic);
     //the 2nd column show the name of the movies
     var tdname = document.createElement('td');
+    console.log(tdname);
     tdname.innerHTML = `${obj.name}`;
     tr.appendChild(tdname);
   //show the year of the movies
@@ -109,7 +110,7 @@ function searchfunc() {
     for (var i = 0; i < data.length; i++) {
       var obj = data[i];
      //if exist, create the table data:column and row
-      if (obj.names.toLowerCase().includes(input)) {
+      if (obj.names.toLowerCase().includes(input) || ((obj.desc).indexOf(input) > -1)) {
         arr.push(obj);
       }
     }
@@ -154,7 +155,6 @@ function to() {
 
     //if match the name or director or desc of movies, link to search page
     if(searchInput == data[i].names || searchInput == data[i].director || searchInput == data[i].desc) {
-      // window.location.href="http://localhost:8081/assignment2_Group18/Web_assignment2_Group18/search.html?search="+searchInput;
       window.location.href="http://localhost/Web_assignment2_Group18/browse.php?search="+searchInput;
     }
   }
