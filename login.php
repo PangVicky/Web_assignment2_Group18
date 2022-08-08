@@ -11,7 +11,6 @@
 </head>
 <body id="loginbody">
 <?php include 'header.php' ?>
-<body id="loginbody">
     <div id="error"></div>
     <div class="formcontainer">
         <h1 id="loginheader">User Sign-Up</h1>

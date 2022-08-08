@@ -10,7 +10,7 @@
                 <li><a href="login.php" id="login">Subscribe/Login</a></li>
                 <li><a href="edituser.php" id="edit">Edit Users</a></li>
                 <li>
-                <form action="search.html" name="searchform" onsubmit="return to()">
+                <form action="browse.php" name="searchform" onsubmit="return to()">
                     <input type="text" placeholder="Search.." name="search" id="searchKey">
                     <button type="submit" id="searchfor"><i class="fa fa-search"></i></button>
                 </form>

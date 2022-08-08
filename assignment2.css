@@ -250,3 +250,12 @@ form.mysearch input[type=text] {
     padding: 10px;
     font-size: medium;
   }
+
+  .table_e a{
+    text-decoration: none;
+    color: #ccc;
+  }
+
+  .table_e a:hover{
+    color: rgb(236,216,30);
+  }
