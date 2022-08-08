@@ -31,7 +31,7 @@ error_reporting(0);
             <td class="table_e"><?php echo $_SESSION['password'] ?></td>
             <td class="table_e"><?php echo $_SESSION['email'] ?></td>
             <td class="table_e"><a href="editinfo.php">Edit</a>
-                    <a href="deleteuser.php">Delete Account</a>
+                    <a href="confirmdeleteuser.php">Delete Account</a>
             </td>
         </tr>
     </table>
