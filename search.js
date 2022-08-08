@@ -16,7 +16,7 @@ const data = [
       "img": "Friends.jpg",
       "names": "Friends",
       "year": 2007,
-      "genre": "Fanmily",
+      "genre": "Family",
       "director": "Jane Wilson",
       "desc": [
         "Million tonne punch",
