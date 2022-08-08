@@ -9,7 +9,7 @@
   <title>Home Page_WEBSITE NAME REQUIRED(NOT NETFLIX)</title>
   <link href="assignment2.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="js/jquery/jquery-1.12.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery/jquery-1.12.1.min.js"></script> -->
   <script src="search.js" defer></script>
 </head>
 
@@ -27,7 +27,6 @@
         </ul>
     </div>
 </header>
-
 
 
 <form class="mysearch" style="margin:auto;max-width:300px">

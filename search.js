@@ -143,27 +143,19 @@ function getOption(selectObject) {
 function oneValues() {
   var oneValue;
   var url = window.location.search;
-  console.log(url);
+  // console.log(url);
   if (url.indexOf("?") != -1) {
     oneValue = url.substring(url.indexOf("=") + 1);
   }
   return oneValue;
 }
 
-function to() {
-  for( var i=0; i < data.length;i++) {
-    const searchInput = document.getElementById("searchKey").value;
 
-    //if match the name or director or desc of movies, link to search page
-    if(searchInput == data[i].names || searchInput == data[i].director || searchInput == data[i].desc) {
-      window.location.href="http://localhost/Web_assignment2_Group18/browse.php?search="+searchInput;
-    }
-  }
-}
-
+function getRequest() {
+  var searchword = oneValues();
+  console.log(searchword);
   document.getElementById("searchbar").value = searchword;
   searchfunc();
 }
-
 
 getRequest();

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="js/jquery/jquery-1.12.1.min.js"></script> -->
     <link href="assignment2.css" rel="stylesheet" type="text/css">
-    <script src="search.js" defer></script>
     <!-- <script src="search.js" defer></script> -->
 </head>
 
