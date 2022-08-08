@@ -22,7 +22,7 @@
             <li><a class="active" href="mainpage.php" id="mainpage">Home</a></li>
             <li><a href="mainpage.php#intro" id="aboutus">About Us</a></li>
             <!-- <li><a href="search.html" id="searching">Search</a></li> -->
-            <li><a href="login.html" id="login">Subscribe/Login</a></li>
+            <li><a href="login.php" id="login">Subscribe/Login</a></li>
             <li><a href="edituser.php" id="edit">Edit Users</a></li>
         </ul>
     </div>
