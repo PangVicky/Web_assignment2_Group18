@@ -14,7 +14,7 @@
     }
 
     $movie = $_REQUEST['movie'];
-    $chkUserId = "SELECT ID FROM USERS WHERE LOGIN = $_SESSION['login']";
+    $chkUserId = "SELECT ID FROM USERS WHERE LOGIN = '$_SESSION['login']'";
     $chkMovieId = "SELECT ID FROM MOVIES WHERE MOVIES = '$movie'";
     $queryResultUserId = mysqli_query($conn, $chkUserId);
     $queryResultMovieId = mysqli_query($conn, $chkMovieId);
@@ -30,6 +30,6 @@
         echo "error" . mysqli_error($conn);
     }
 
-
+   
 
 ?>
