@@ -48,6 +48,9 @@
     <option value="Comedy">Comedy</option>
     <option value="Family">Family</option>
     <option value="Show">Show</option>
+    <option value="Thriller">Thriller</option>
+    <option value="Drama">Drama</option>
+    <option value="Action">Action</option>
   </select>
   </form>
   <table>
