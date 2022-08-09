@@ -31,7 +31,10 @@
             <li><a href="mainpage.php#intro" id="aboutus">About Us</a></li>
             <!-- <li><a href="search.html" id="searching">Search</a></li> -->
             <li><a href="login.php" id="login">Subscribe/Login</a></li>
-            <li><a href="edituser.php" id="edit">Edit Users</a></li>
+            <?php if (isset ($_SESSION['login'])) {
+                    echo '<li><a href="edituser.php" id="edit">Edit Users</a></li>';
+                }
+            ?>
         </ul>
     </div>
 </header>
