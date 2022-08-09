@@ -13,6 +13,19 @@ var data = [
       "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
     },
     {
+      "img": "virgin_river.jpg",
+      "names": "Virgin River",
+      "year": 2022,
+      "genre": "Family",
+      "director": "Dan Jukes",
+      "desc": [
+        "Radiation resistance",
+        "Turning tiny",
+        "Radiation blast"
+      ],
+      "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+    },
+    {
       "img": "Friends.jpg",
       "names": "Friends",
       "year": 2007,
@@ -29,7 +42,7 @@ var data = [
       "img": "Grey's_Anatomy.jpg",
       "names": "Grey's Anatomy",
       "year": 2010,
-      "genre": "Show",
+      "genre": "Talk Show",
       "director": "Jane Wilson",
       "desc": [
         "Million tonne punch",
@@ -43,7 +56,7 @@ var data = [
       "img": "HouseCards.jpg",
       "names": "House of Cards",
       "year": 2019,
-      "genre": "Show",
+      "genre": "Talk Show",
       "director": "Jane Wilson",
       "desc": [
         "Million tonne punch",
@@ -84,7 +97,6 @@ function to() {
         // document.searchform.submit();
         for (var i = 0; i < data.length; i++) {
             const searchInput = document.getElementById("searchKey").value;
-
             //if match the name or director or desc of movies, link to search page
             if (searchInput == data[i].names || searchInput == data[i].director || searchInput == data[i].desc) {
               window.location.href = "http://localhost:8081/Web_assignment2_Group18/browse.php?search=" + searchInput;

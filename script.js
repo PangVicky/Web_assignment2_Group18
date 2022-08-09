@@ -205,37 +205,3 @@ function reserFormError() {
 }
  document.loginForm.addEventListener("reset",reserFormError);
  document.loginForm.addEventListener("submit", validate);
-
- 
-//method to validate search
-function validateSearch(){
-    var searchword = document.getElementById("searchKey");
-    var pattern = new RegExp("^[`~!@#$^&*()=|{}':;',\\[\\].<>/?~@#￥……&*（）——|{}【】‘；：”“'。，、？]*$");
-    if ( searchword == null || searchword == ''|| searchword == "" || searchword.indexOf('Please input') >=0 ){
-        alert("Please input the search words");
-        return false;
-    }else if ( pattern.test(searchword)) {
-        alert("Please input the right search words");
-        return false;
-    }else {
-        return true;
-    }    
-}
-
-
-function to() {
-    if(validateSearch){
-    const searchInput = document.getElementById("searchKey").value;
-    console.log(searchInput);
-    if( searchInput == '' ){
-      return false;
-    }else{
-    for( var i=0; i < data.length;i++) {
-      //if match the name or director or desc of movies, link to search page
-      if(searchInput == data[i].names || searchInput == data[i].director || searchInput == data[i].desc) {
-        window.location.href="http://localhost/Web_assignment2_Group18/browse.php?search="+searchInput;
-      }
-    }
-  }
-  }
-  }

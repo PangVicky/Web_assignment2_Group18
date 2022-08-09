@@ -37,9 +37,10 @@
 </header>
 
 
-<form class="mysearch" style="margin:auto;max-width:300px">
-    <input id="searchbar" type="text" placeholder="Please input.." name="search2">
-    <button type="button" onclick="searchfunc()"><i class="fa fa-search"></i></button>
+  <!-- create the elemment: search style="margin:auto;max-width:300px -->
+  <form class="mysearch" onsubmit="searchfunc()">
+    <input id="searchbar" type="text" placeholder="Search..." name="search2">
+    <button type="submit"  id="searchbtn"><i class="fa fa-search"></i></button>
   
   <!-- create the filter area -->
   <select name="options" id="filter" onchange="getOption(this)">

@@ -1,9 +1,22 @@
-const data = [
+var data = [
   {
     "img": "DesperateHousewives.jpg",
     "names": "Desperate Housewives",
     "year": 2015,
     "genre": "Comedy",
+    "director": "Dan Jukes",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+  },
+  {
+    "img": "virgin_river.jpg",
+    "names": "Virgin River",
+    "year": 2022,
+    "genre": "Family",
     "director": "Dan Jukes",
     "desc": [
       "Radiation resistance",
@@ -239,7 +252,6 @@ function showlist(res) {
     tr.appendChild(tdpic);
     //the 2nd column show the name of the movies
     var tdname = document.createElement('td');
-    console.log(tdname);
     tdname.innerHTML = `${obj.names}`;
     tr.appendChild(tdname);
     //show the year of the movies
@@ -256,8 +268,11 @@ function showlist(res) {
   }
 }
 
+
 function searchfunc() {
   var input = document.getElementById('searchbar').value;
+  var original_input = input;
+  console.log("=====" + input);
   if (input != "") {
     var tbody = document.querySelector("tbody");
     tbody.innerHTML = '';
@@ -271,6 +286,7 @@ function searchfunc() {
       }
     }
     showlist(arr);
+    document.getElementById('searchbar').value=original_input;
   }
 }
 
@@ -299,9 +315,10 @@ function getOption(selectObject) {
 function oneValues() {
   var oneValue;
   var url = window.location.search;
-  // console.log(url);
+
   if (url.indexOf("?") != -1) {
     oneValue = url.substring(url.indexOf("=") + 1);
+    oneValue = oneValue.split("&")[0];
   }
   return oneValue;
 }
@@ -309,9 +326,12 @@ function oneValues() {
 
 function getRequest() {
   var searchword = oneValues();
-  console.log(searchword);
   document.getElementById("searchbar").value = searchword;
+  if (searchword.includes("?")) {
+    
+  }
   searchfunc();
+  
 }
 
 getRequest();
