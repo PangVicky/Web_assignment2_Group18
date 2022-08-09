@@ -15,6 +15,7 @@
     <meta name="author" content="Group18_Section303_Assignment2">
     <title>Login</title>
     <link href="assignment2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
