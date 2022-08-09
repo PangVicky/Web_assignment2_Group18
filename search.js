@@ -64,6 +64,162 @@ const data = [
       "Superhuman reflexes"
     ],
     "link": "https://www.youtube.com/watch?v=bd7UQA9laJE"
+  },
+  {
+    "img": "spider-man-no-way-home.jpg",
+    "names": "Spider-Man",
+    "year": 2022,
+    "genre": "Action",
+    "director": "Jon Watts",
+    "desc": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
+    ],
+    "link":  "https://www.youtube.com/watch?v=JfVOs4VSpmA"
+  },
+{
+    "img": "Black_Panther.jpg",
+    "names": "Black Panther",
+    "year": 2022,
+    "genre": "Action",
+    "director": "Ryan Coogler",
+    "desc": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
+    ],
+    "link":  "https://www.youtube.com/watch?v=4E2RNfQQImY"
+  },
+{
+    "img": "john-wick-4.jpg",
+    "names": "John Wick",
+    "year": 2022,
+    "genre": "Action",
+    "director": "Chad Stahelski",
+    "desc": [
+      "Million tonne punch",
+      "Damage resistance",
+      "Superhuman reflexes"
+    ],
+    "link":  "https://www.youtube.com/watch?v=D-2KnLQFvsQ"
+  },
+{
+    "img": "dont-look-up.jpg",
+    "names": "Don't look up",
+    "year": 2021,
+    "genre": "Family",
+    "director": "Adam McKay",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=RbIxYm3mKzI"
+  },
+{
+    "img": "Red_Notice.jpg",
+    "names": "Red Notice",
+    "year": 2021,
+    "genre": "Action",
+    "director": "Rawson Marshall Thurber",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=Pj0wz7zu3Ms"
+  },
+{
+    "img": "Halloween-Kills.jpg",
+    "names": "Halloween Kills",
+    "year": 2021,
+    "genre": "Thriller",
+    "director": "David Gordon Green",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=hL6R3HmQfPc"
+  },
+{
+    "img": "orphan-first-kill.jpg",
+    "names": "Orphan: First Kills",
+    "year": 2022,
+    "genre": "Thriller",
+    "director": "William Brent Bell",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uX6of3vBu0"
+  },
+{
+    "img": "beast.jpg",
+    "names": "Beast",
+    "year": 2022,
+    "genre": "Thriller",
+    "director": "Nelson Dilipkumar",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=oQMc7Sq36mI"
+  },
+{
+    "img": "blonde.jpg",
+    "names": "Blonde",
+    "year": 2022,
+    "genre": "Drama",
+    "director": "Andrew Dominik",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=aIsFywuZPoQ"
+  },
+{
+    "img": "bros.jpg",
+    "names": "Bros",
+    "year": 2022,
+    "genre": "Comedy",
+    "director": "Nocholas Stoller",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=BQIeBB9XMe8"
+  },
+{
+    "img": "ticket-to-paradise.jpg",
+    "names": "Ticket to Paradise",
+    "year": 2022,
+    "genre": "Family",
+    "director": "OI Parker",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=hkP4tVTdsz8"
+  },
+{
+    "img": "black-adam.jpg",
+    "names": "Black Adam",
+    "year": 2022,
+    "genre": "Action",
+    "director": "OI Parker",
+    "desc": [
+      "Radiation resistance",
+      "Turning tiny",
+      "Radiation blast"
+    ],
+    "link": "https://www.youtube.com/watch?v=X0tOpBuYasI"
   }
 ]
 
