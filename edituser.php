@@ -23,6 +23,7 @@
 <body>
 <?php include 'header.php' // Adds header.php to page, prints header and nav bar ?>
 
+<!-- forms a table to display user information to allow edit and delete -->
 <table id="usertable">
         <tr>
             <th class="table_e">ID</th>

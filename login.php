@@ -20,6 +20,7 @@
 <body id="loginbody">
 <?php include 'header.php' // Adds header.php to page, prints header and nav bar ?>
     <div id="error"></div>
+    <!-- creates a sign-up form to allow users input information to sign-up -->
     <div class="formcontainer">
         <h1 id="loginheader">User Sign-Up</h1>
         <hr>
@@ -65,6 +66,7 @@
             <button type="submit" id="submit">Sign-Up</button>
             <button type="reset" id="reset">Reset</button>
         </form>
+        <!-- creates a login form to allow users to log in -->
         <h1 id="loginheader">User Login</h1>
         <hr>
         <form action="verifylogin.php" method="post" id="loginform">

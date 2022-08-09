@@ -24,6 +24,7 @@
 
 <?php include 'header.php' // Adds header.php to page, prints header and nav bar ?>
 
+<!--creates contents of movie names, pictures and links to the trailers-->
 <div id="main">
         <div id="content">
             <div class="box">
