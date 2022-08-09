@@ -1,9 +1,13 @@
+/*css of all pages. -Jingfei*/
+
+/*responsive screen setting*/
 @media screen {
     .main { width:100%; }
     footer { width:100%; border:none; }
     img { max-width:100%; }
 }
 
+/*css of main page and the login page*/
 #mainbody {
     margin: 2% 5%;
 }
@@ -17,8 +21,6 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction:column;
-    
-
 }
 
 #heading3 {
@@ -35,7 +37,6 @@ body {
  #titlelink {
     color: #ccc;
     text-decoration: none;
-    
  }
 
  #heading2, #heading3, #heading4, #heading5 {
@@ -93,11 +94,14 @@ body {
     display:block;
 }
 
+#content {
+  display: grid;
+}
+
 footer {
     min-height: 50px;
     margin-top: auto;
 }
-
 
 #footer{
     margin-left: auto;
@@ -155,7 +159,7 @@ button {
     border: none;
     margin: 5pt;
 }
-
+/*css of search.html*/
 form.mysearch input[type=text] {
     padding: 10px;
     font-size: 17px;
@@ -187,15 +191,6 @@ form.mysearch input[type=text] {
     display: table;
   }
 
-  #movieheadert {
-    text-align: left;
-  }
-
-  #content {
-    display: grid;
-  }
-
-  /*search.html*/
   * {
     box-sizing: border-box;
   }
@@ -236,7 +231,7 @@ form.mysearch input[type=text] {
     margin: 10pt;
   }
 
-  /*edituser.html*/
+  /*css of edituser.html*/
   #usertable, .table_e {
     border: 1px solid #ccc;
   }
