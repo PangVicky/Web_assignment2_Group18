@@ -23,8 +23,8 @@
 <main>
     <div>
         <h2>Are you sure you want to delete your account?</h2>
-        <a href="deleteuser.php">Yes</a>
-        <a href="edituser.php">No</a>
+        <a class="confir" href="deleteuser.php">Yes</a>
+        <a class="confir" href="edituser.php">No</a>
     </div>
 
 </main>

@@ -254,3 +254,11 @@ form.mysearch input[type=text] {
   .table_e a:hover{
     color: rgb(236,216,30);
   }
+
+  /*buttons for confirm delete user*/
+  .confir {
+    text-decoration: none;
+    color:#ccc;
+    background-color: #0b7dda;
+    padding: 2pt;
+  }
