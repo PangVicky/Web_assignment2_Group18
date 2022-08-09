@@ -84,7 +84,7 @@ function showlist(res) {
     //the 2nd column show the name of the movies
     var tdname = document.createElement('td');
     console.log(tdname);
-    tdname.innerHTML = `${obj.name}`;
+    tdname.innerHTML = `${obj.names}`;
     tr.appendChild(tdname);
     //show the year of the movies
     var tdyear = document.createElement('td');
